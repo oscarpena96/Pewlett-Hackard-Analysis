@@ -36,7 +36,8 @@ Import/Export Data when you right click a table and we got to work.
 
 First of all we calculated the total of people that will leave the company in the years to come, for this we aproximated that the people born in between the years 1952
 and 1955 will be the first ones leaving so we focused on them and with the code
-'''SELECT e.emp_no,
+'''Javascript
+SELECT e.emp_no,
        e.first_name,
        e.last_name,
        t.title,
