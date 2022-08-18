@@ -36,7 +36,7 @@ Import/Export Data when you right click a table and we got to work.
 
 First of all we calculated the total of people that will leave the company in the years to come, for this we aproximated that the people born in between the years 1952
 and 1955 will be the first ones leaving so we focused on them and with the code
-`$ SELECT e.emp_no,
+'''SELECT e.emp_no,
        e.first_name,
        e.last_name,
        t.title,
@@ -47,10 +47,11 @@ FROM employees as e
 INNER JOIN titles as t
 ON (e.emp_no = t.emp_no)
 WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31')
-order by e.emp_no;`
+order by e.emp_no;
+'''
 we filter them and realized that they where duplicates because of some people getting promoted so to make sure we eliminated the duplicates we implemented the code
 
-`$ SELECT DISTINCT ON (emp_no) emp_no,
+'''$ SELECT DISTINCT ON (emp_no) emp_no,
 first_name,
 last_name,
 title
