@@ -20,13 +20,13 @@ there is a lot of people retiring there is going to be a lot of openings se we n
 For us to be able to understand how to proceed we needed to understand the connection between each csv file so after a thorough search we saw that they had what is
 called a primary key (fig. 1), with this information we are able to connect all of the databases.
 
-![Alt text](Pewlett-Hackard-Analysis/Images/Primary_key.png "Primary keys")
+![Alt text](Images/Primary_key.png "Primary keys")
 
 After recognizing all the primary and foreign keys (just like the primariies but from another database) we created a Entity Relationship Diagram or ERD to representate 
 the relationship between each other
 
 
-![Alt text](Pewlett-Hackard-Analysis/Images/EmployeeDB.png "Primary keys")
+![Alt text](Images/EmployeeDB.png "Primary keys")
 
 And this is where we enter SQL, I personally use postgressSQL v.11..17.1 but this my personal choice, there is more advanced version if you want to try them, in
 pgAdming we created the commands to insert tables and specify the type of data for each column, after that we inserted the tables manually from the option
@@ -95,7 +95,7 @@ We found the total employees retiring and the position opening up, also the eleg
 The total employees is not as big as we tought at first because almost half of them had a promotion changing the title they had creating duplicates, that is a 
 inefficient way to store data creating confussion. 
 
-![Alt text](Pewlett-Hackard-Analysis/Images/Filtered_unique.png "Total_employees_letting_down")
+![Alt text](Images/Filtered_unique.png "Total_employees_letting_down")
 
 If we look at fig 3. we can see that there is a total of 72,458 (as mention before) that enter the range of people retiring, this can be an issue to the company 
 being such a large number, and if we compare the people that can enter the mentorship we can see that it is nothing (0.0026%) so the company must have work fair or
